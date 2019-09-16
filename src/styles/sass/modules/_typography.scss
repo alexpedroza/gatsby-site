@@ -1,0 +1,13 @@
+//--- fonts ---//
+$font-stack: helvetica, arial, san-serif;
+
+$font-weights:(
+    "light": 300,
+    "normal": 400,
+    "bold": 700,
+    "black": 900,
+);
+
+@function weight($weight-name){
+    @return map-get($font-weights, $weight-name);
+}

@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby custom site Starter`,
     description: `This custom site configuration for Gatsby projects that has the dependency files I usually need.`,
-    author: `alexpedroza@protonmail.com`,
+    author: `@alexspedroza`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

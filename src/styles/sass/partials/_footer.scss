@@ -1,0 +1,78 @@
+/* --- single col --- */
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $light;
+    margin-bottom: 0;
+}
+.footer-block{
+    //border: 2px solid red;
+    width: $phone;
+}
+.footer-menu__title{
+    //border: 2px solid green;
+    text-align: center;
+}
+.footer-menu__social,
+.footer-menu__sub-links {
+    padding-top: 1.2em;
+    margin-left: 0;
+}
+.footer-menu__social{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.footer-menu__sub-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+.menu-item__subs{
+    padding: 0.1em;
+    a{
+        padding: 0.2em 1em;
+        color: red;
+    }
+}
+.menu-item{
+    text-decoration: none;
+    list-style: none;
+    color: $primary;
+    margin-bottom: 0;
+}
+.copyright{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+a{
+    text-decoration: none;
+    color: $primary;
+}
+.footer-container{
+    display: grid;
+    //border: 2px solid red;
+    margin: 0 auto;
+    width: $phone;
+    justify-content: center;
+    @include mq('tablet-small') {
+        width: $tablet-small;
+    }
+    @include mq('tablet') {
+        width: $tablet;
+        grid-template-columns: $col-3;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+

@@ -1,0 +1,21 @@
+.section-layout {
+    display: grid;
+    grid-template-columns: $col-1;
+    width: $phone;
+   // border: 1px solid orange;
+    padding: 0.5em 0.6em;
+    @include mq('tablet-small') {
+        grid-template-columns: $col-2;
+        width: $tablet-small;
+    }
+    @include mq('tablet') {
+        width: $tablet;
+        grid-template-columns: $col-3;
+    }
+}
+.box {
+    //border: 1px solid teal;
+    width: $col-1;
+}
+
+

@@ -1,0 +1,40 @@
+/* --- single col --- */
+.header-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 14vh;
+    background-color: $light;
+    //justify-content: center;
+}
+.logo-block{
+    //border: 2px solid red;
+    width: $phone;
+}
+.header-logo{
+    text-align: center;
+}
+.logo-link{
+    color: $primary;
+    font-size: 1.1rem;
+}
+.header-container{
+    //border: 2px solid red;
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0.8em 1em;
+    width: $phone;
+    @include mq('tablet-small'){
+        width: $tablet-small;
+    }
+    @include mq('tablet'){
+        width: $tablet;
+        grid-template-columns: $col-3;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+    }
+}
+
+

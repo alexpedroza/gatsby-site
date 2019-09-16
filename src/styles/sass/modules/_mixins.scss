@@ -1,0 +1,25 @@
+@mixin flexCenter($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+};
+$breakpoints: (
+    "phone":        320px,
+    "tablet-small": 640px,
+    "tablet":       960px,
+    "tablet-wide":  1280px,
+    "desktop":      1600px,
+    "desktop-wide": 1920px
+);
+@mixin mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+};

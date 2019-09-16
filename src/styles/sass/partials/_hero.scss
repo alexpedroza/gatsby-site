@@ -1,0 +1,17 @@
+.grid-block {
+    //border: 1px solid greenyellow;
+    max-width: $col-1;
+    padding: 1.2em;
+}
+.block-heading {
+    margin-bottom: 0.83333em;
+}
+.block-title {
+    background-color: $light;
+}
+.block-content {
+    color: $secondary;
+}
+.block-copy {
+    //color: pink;
+}
